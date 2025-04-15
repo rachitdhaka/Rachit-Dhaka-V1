@@ -5,9 +5,7 @@ const FooterV1 = () => {
     <div>
       
       <div className="text-[10px] text-[#9b9b9b] flex justify-center  mb-2">
-
-        
-      
+        v0
       </div>
       <div className="text-[10px] text-[#9b9b9b] flex justify-center  mb-3">
         Made with 💖 . Rachit Dhaka
