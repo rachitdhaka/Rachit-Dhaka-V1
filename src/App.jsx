@@ -3,20 +3,8 @@ import ProjectCard from "./component/ProjectCard";
 import ethlinkImg from "./assets/Images/image.png";
 import orbitus from "./assets/Images/83262276-ed3d-4038-83e9-4798ff38811c.png";
 
-import { createBrowserRouter , RouterProvider } from "react-router";
 import FooterV1 from "./component/FooterV1";
-import V0 from "./component/V0";
 
-const router = createBrowserRouter(
-  [
-    {
-      path:"/V0",
-      element:
-        <V0/>
-
-    }
-  ]
-)
 const projects = [
   {
     id: 1,
@@ -37,7 +25,6 @@ const projects = [
 function App() {
   return (
     <div className="bg-slate-50 min-h-screen">
-      
       <div className="max-w-[40%] mx-auto  px-6 py-8">
         <header className="flex justify-between items-center mb-20">
           <div>
@@ -51,17 +38,26 @@ function App() {
           <nav>
             <ul className="flex space-x-6 text-[12px]">
               <li>
-                <a href="https://github.com/rachitdhaka" className="hover:underline">
+                <a
+                  href="https://github.com/rachitdhaka"
+                  className="hover:underline"
+                >
                   GitHub
                 </a>
               </li>
               <li>
-                <a href="https://www.linkedin.com/in/rachitdhaka/" className="hover:underline">
+                <a
+                  href="https://www.linkedin.com/in/rachitdhaka/"
+                  className="hover:underline"
+                >
                   LinkedIn
                 </a>
               </li>
               <li>
-                <a href="https://codolio.com/profile/rachitdhaka" className="hover:underline">
+                <a
+                  href="https://codolio.com/profile/rachitdhaka"
+                  className="hover:underline"
+                >
                   Coding
                 </a>
               </li>
@@ -110,7 +106,9 @@ function App() {
         </div>
       </section>
 
-      <FooterV1/>
+    
+
+      <FooterV1 />
     </div>
   );
 }

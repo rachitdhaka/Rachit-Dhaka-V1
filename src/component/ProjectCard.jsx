@@ -2,20 +2,24 @@ import React from "react";
 
 const ProjectCard = ({ image, title, description, url }) => {
   return (
-    <a href={url} target="_blank" rel="noopener noreferrer">
-      <div className="bg-gray-100 rounded-2xl transition-all duration-300 hover:shadow-lg hover:-translate-y-2 hover:bg-gray-200">
-        <div className="p-4">
-          <img
-            src={image}
-            alt={title}
-            className="w-full rounded-lg mb-4 drop-shadow-sm"
-          />
-
-          <div className="flex flex-col justify-center p-5">
-            <h3 className="text-xl font-medium text-gray-800">{title}</h3>
-            <p className="text-gray-600">{description}</p>
-          </div>
-        </div>
+    <a
+      href={url}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="block rounded-xl shadow-md bg-white hover:shadow-xl transition-all duration-300 overflow-hidden transform hover:-translate-y-1 group p-4"
+    >
+      <div className="relative  ">
+        <img
+          src={image}
+          alt={title}
+          className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-105 rounded-xl hover:rounded-xl"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+      </div>
+      <div className="p-6">
+        <h4 className="text-xl font-bold mb-2 text-gray-800 group-hover:text-blue-600 transition-colors duration-300">{title}</h4>
+        <p className="text-gray-600 mb-4">{description}</p>
+       
       </div>
     </a>
   );
