@@ -8,10 +8,16 @@
     font-family: Martin;
     src: url(../src/assets/fonts/Aston\ Martin\ Sans.ttf);
 }
+
+@font-face {
+    font-family: Saans;
+    src: url(../src/assets/fonts/saans-font.woff2);
+}
 @import "tailwindcss";
 
 @theme{
     --font-maga:Maga , "sans-serif";
     --font-schelter:Schelter Grotesk NF , "san-serif";
-    --font-martin:Martin,"san-serif"
+    --font-martin:Martin,"san-serif";
+    --font-saans:Saans,"san-serif";
 }

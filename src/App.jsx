@@ -70,13 +70,15 @@ function App() {
             <h1 className="font-maga text-4xl font-bold mb-2">
               Hello, I'm Rachit.
             </h1>
-            <p className="text-xl text-gray-500 mb-8">
+            <p className="text-xl font-saans text-gray-500 mb-8">
               Developer - Dsa - Designer
             </p>
 
-            <p className=" font-martin  text-gray-700 mb-3 leading-relaxed">
+            <p className=" font-Saans text-[16px]  text-gray-700 mb-3 leading-relaxed">
               3rd Year CSE Undergrad at SRM University | Web Developer | Problem
-              Solver | Core Member - GeeksforGeeks SRM RMP | Building Vartalaap
+              Solver | Core Member - GeeksforGeeks SRM RMP | Building 
+              <a href=" https://vartalaappodcast.vercel.app/ " className="font-bold font-maga  hover:text-2xl duration-300"> Vartalaap</a>
+              
               - A Podcast Platform for Voices That Matter
             </p>
           </section>
